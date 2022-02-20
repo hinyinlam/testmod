@@ -12,3 +12,15 @@ func TestMath(t *testing.T) {
 		t.Fatalf("x: %d, y: %d total should be: %d", x, y, want)
 	}
 }
+
+func TestMultiple(t *testing.T) {
+	var x = 10
+	var y = 20
+	var expect int64 = 200
+
+	got := Multiple(10, 20)
+	if got != expect {
+		t.Fatalf("X: %d, Y: %d, Expect: %d, Got: %d", x, y, expect, got)
+	}
+
+}
